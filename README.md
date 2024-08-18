@@ -2,10 +2,17 @@
 This repository is for the The Nexus Battle III game module by PI2.
 
 ESQUEMATIZACIÓN DE EFECTO DE PRODUCTO
-
 Tipo de producto: Arma, item, armadura, habilidad (épica o especial). 
-
 Variable: Poder / Vida / Defensa / Ataque / Daño / Crítico 
+
+
+Extensiones necesarias para repositorio
+Obligatorias:
+. Prettier
+- ESlint
+
+Opcionales (recomendadas):
+- Error Lens
 
 Variables de Héroe en Base de datos
 
