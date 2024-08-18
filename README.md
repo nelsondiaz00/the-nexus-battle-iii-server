@@ -1,20 +1,19 @@
-# gaming-module
+# gaming-module-server
 This repository is for the The Nexus Battle III game module by PI2.
 
-ESQUEMATIZACIÓN DE EFECTO DE PRODUCTO
-Tipo de producto: Arma, item, armadura, habilidad (épica o especial). 
-Variable: Poder / Vida / Defensa / Ataque / Daño / Crítico 
+<br>
 
+**Extensiones necesarias para repositorio**  
 
-Extensiones necesarias para repositorio
 Obligatorias:
-. Prettier
+- Prettier
 - ESlint
 
 Opcionales (recomendadas):
-- Error Lens
+- Error Lens  
+<br>
 
-Variables de Héroe en Base de datos
+**Variables de Héroe en Base de datos** 
 
 Acceso: inventario, gaming
 - tipo-heroe [string]
