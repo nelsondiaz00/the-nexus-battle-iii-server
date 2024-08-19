@@ -29,6 +29,10 @@ export const Config = {
         MODULO: process.env.OPERACION_MODULO || "%",
         EXPONENCIACION: process.env.OPERACION_EXPO || "^",
     },
+    LogicOperation: {
+        MAYOR: process.env.OPERACION_LOGICA_MAYOR || ">",
+        MENOR: process.env.OPERACION_LOGICA_MENOR || "<"
+    },
     Target: {
         ALIADO: process.env.OBJETIVO_ALIADO || "aliado",
         ENEMIGO: process.env.OBJETIVO_OPONENTE || "enemigo",
@@ -44,4 +48,8 @@ export const Config = {
         NIVEL: process.env.ATRIBUTO_NIVEL || "nivel",
         EXPERIENCIA: process.env.ATRIBUTO_EXPERIENCIA || "experiencia",
     },
+    SideTeam: {
+        ROJO: process.env.EQUIPO_ROJO || "rojo",
+        AZUL: process.env.EQUIPO_AZUL || "azul",
+    }
 };
