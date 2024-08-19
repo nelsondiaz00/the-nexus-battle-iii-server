@@ -27,7 +27,7 @@ export class Effect {
         this.valueCaused = 0;
     }
 
-    accumulateValue(): void {
+    accumulateValue() {
         this.valueCaused += this.value;
     }
 }

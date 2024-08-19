@@ -5,15 +5,17 @@ import { Effect } from "../src/models/effect";
 
 // Crear atributos
 const attributes = [
-    new Attribute("PODER", 15),
-    new Attribute("SALUD", 100),
-    new Attribute("ATAQUE", 20),
-    new Attribute("DANO", 25),
-    new Attribute("CRITICO", 5),
-    new Attribute("DEFENSA", 10),
-    new Attribute("NIVEL", 1),
-    new Attribute("EXPERIENCIA", 0),
+    new Attribute("PODER", 15, null, null),
+    new Attribute("SALUD", 100, null, null),
+    new Attribute("ATAQUE", 20, null, null),
+    new Attribute("DANO", 25, null, null),
+    new Attribute("CRITICO", 5, null, null),
+    new Attribute("DEFENSA", 10, null, null),
+    new Attribute("NIVEL", 1, null, null),
+    new Attribute("EXPERIENCIA", 0, null, null),
 ];
+
+
 
 const effect1 = new Effect("DEFENSA", "RESTA", 10, "JUGADOR", 10, null);
 const effect2 = new Effect("ATAQUE", "SUMA", 5, "JUGADOR", 15, null);
