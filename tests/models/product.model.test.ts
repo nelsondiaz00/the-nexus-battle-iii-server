@@ -2,8 +2,8 @@ import { Product } from "../../src/models/product.model";
 import { Hero } from "../../src/models/hero.model";
 import { Effect } from "../../src/models/effect.model";
 import { Attribute } from "../../src/models/attribute.model";
-import { heroType, subHeroType } from "../../shared/ts/types/hero.type";
-import { productType } from "../../shared/ts/types/product.type";
+import { heroType, subHeroType } from "../../src/ts/types/hero.type";
+import { productType } from "../../src/ts/types/product.type";
 
 // mocks for testing
 

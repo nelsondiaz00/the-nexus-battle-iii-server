@@ -1,11 +1,11 @@
-import { IHero } from "../../shared/ts/interfaces/hero.interfaces";
-import { IEffect } from "../../shared/ts/interfaces/effect.interfaces";
+import { IHero } from "../ts/interfaces/hero.interfaces";
+import { IEffect } from "../ts/interfaces/effect.interfaces";
 import { Attribute } from "../models/attribute.model";
 import { Effect } from "../models/effect.model";
 import { Product } from "../models/product.model";
 import { Hero } from "../models/hero.model";
-import { heroType, subHeroType } from "../../shared/ts/types/hero.type";
-import { IProduct } from "../../shared/ts/interfaces/product.interfaces";
+import { heroType, subHeroType } from "../ts/types/hero.type";
+import { IProduct } from "../ts/interfaces/product.interfaces";
 
 export class HeroService {
     static createHeroFromJSON(json: IHero): Hero {

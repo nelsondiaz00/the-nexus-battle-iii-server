@@ -1,4 +1,4 @@
-import { attributeName } from "../../shared/ts/types/attribute.type";
+import { attributeName } from "../ts/types/attribute.type";
 export class Attribute {
     private _name: attributeName;
     private _value: number;

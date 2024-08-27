@@ -3,9 +3,9 @@ import { Condition } from "./condition.model";
 import { Hero } from "./hero.model";
 import { Attribute } from "./attribute.model";
 import { evaluate } from "mathjs";
-import { productType } from "../../shared/ts/types/product.type";
-import { heroType } from "../../shared/ts/types/hero.type";
-import { subHeroType } from "../../shared/ts/types/hero.type";
+import { productType } from "../ts/types/product.type";
+import { heroType } from "../ts/types/hero.type";
+import { subHeroType } from "../ts/types/hero.type";
 
 export class Product {
     productName: string;

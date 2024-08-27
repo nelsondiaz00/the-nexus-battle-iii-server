@@ -1,6 +1,6 @@
 import { Attribute } from "./attribute.model";
-import { heroType } from "../../shared/ts/types/hero.type";
-import { subHeroType } from "../../shared/ts/types/hero.type";
+import { heroType } from "../ts/types/hero.type";
+import { subHeroType } from "../ts/types/hero.type";
 import { Product } from "./product.model";
 // import { IHero } from "../ts/interfaces/hero.interfaces";
 
