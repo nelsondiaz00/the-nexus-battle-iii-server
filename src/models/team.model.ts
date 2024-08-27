@@ -1,5 +1,5 @@
 import { Hero } from "./hero.model";
-import { teamSide } from "../ts/types/team.type";
+import { teamSide } from "../../shared/ts/types/team.type";
 export class Team {
     players: Hero[];
     name: teamSide;

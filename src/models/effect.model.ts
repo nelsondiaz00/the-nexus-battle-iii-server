@@ -1,5 +1,5 @@
 import { Attribute } from "./attribute.model";
-import { targetType } from "../ts/types/effect.type";
+import { targetType } from "../../shared/ts/types/effect.type";
 
 export class Effect {
     attribute: Attribute;
