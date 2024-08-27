@@ -1,9 +1,9 @@
 import { Hero } from "../models/hero.model";
-import { Team } from "../models/team.model";
+// import { Team } from "../models/team.model";
 
 export class Referee {
     players: Hero[];
-    teams: Team[];
+    // teams: Team[];
 
     constructor(players: Hero[]) {
         this.players = players;
@@ -22,10 +22,10 @@ export class Referee {
             ];
         }
     }
-    setTeams(): void {
-        const mid = Math.floor(this.players.length / 2);
-        this.teams[0] = this.players.slice(0, mid);
-        this.teams[1] = this.players.slice(mid);
-        console.log("Lista final:", this.players);
-    }
+    // setTeams(): void {
+    //     const mid = Math.floor(this.players.length / 2);
+    //     this.teams[0] = this.players.slice(0, mid);
+    //     this.teams[1] = this.players.slice(mid);
+    //     console.log("Lista final:", this.players);
+    // }
 }

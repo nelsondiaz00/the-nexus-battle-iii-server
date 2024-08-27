@@ -1,18 +1,22 @@
-import WebSocket from 'ws';
+import { WebSocketServer } from "ws";
 
-const wss = new WebSocket.Server({ port: 3000 });
+const server = new WebSocketServer({ port: 3000 });
 
-wss.on('connection', (ws: WebSocket) => {
-    console.log('A client connected.');
+server.on("connection", (ws) => {
+    console.log("Client connected");
 
-    ws.on('message', (message: string) => {
-        console.log(`Received message: ${message}`);
-        ws.send(`Echo: ${message}`);
+    ws.on("message", (message) => {
+        console.log(`Message received: ${message}`);
+        server.clients.forEach((client) => {
+            if (client !== ws && client.readyState === WebSocket.OPEN) {
+                client.send(message);
+            }
+        });
     });
 
-    ws.on('close', () => {
-        console.log('A client disconnected.');
+    ws.on("close", () => {
+        console.log("Client disconnected");
     });
 });
 
-console.log('WebSocket server is running on ws://localhost:3000');
+console.log("WebSocket server running on ws://localhost:3000");

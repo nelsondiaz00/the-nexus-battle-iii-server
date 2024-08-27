@@ -1,6 +1,6 @@
 import { HeroService } from "../../src/services/hero.service";
 import { Hero } from "../../src/models/hero.model";
-import { IHero } from "../../shared/ts/interfaces/hero.interfaces";
+import { IHero } from "../../src/ts/interfaces/hero.interfaces";
 import * as fs from "fs";
 import * as path from "path";
 

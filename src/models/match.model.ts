@@ -1,16 +1,13 @@
 import { Team } from "./team.model";
 import { Referee } from "../services/referee";
-import { Config } from "../../config/config";
+import { teamSide } from "../ts/types/team.type";
 
 export class Match {
-    teams: Map<string, Team>;
+    teams: Map<teamSide, Team>;
     referee: Referee;
     size: number;
 
-    constructor(
-        teams: Map<keyof typeof Config.SideTeam, Team>,
-        referee: Referee
-    ) {
+    constructor(teams: Map<teamSide, Team>, referee: Referee) {
         this.teams = teams;
         this.referee = referee;
         this.size = teams.size;
