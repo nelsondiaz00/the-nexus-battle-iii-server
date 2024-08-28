@@ -5,5 +5,4 @@ export interface IAttribute {
     _value: number;
     valueMin: number;
     valueMax: number;
-    valueConstant: number;
 }
