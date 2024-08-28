@@ -1,15 +1,14 @@
 import { Team } from "./team.model";
-import { Referee } from "../services/referee";
 import { teamSide } from "../ts/types/team.type";
 
 export class Match {
+    idMatch: string;
     teams: Map<teamSide, Team>;
-    referee: Referee;
     size: number;
 
-    constructor(teams: Map<teamSide, Team>, referee: Referee) {
+    constructor(idMatch: string, teams: Map<teamSide, Team>) {
         this.teams = teams;
-        this.referee = referee;
+        this.idMatch = idMatch;
         this.size = teams.size;
     }
     // simulacion de juego
