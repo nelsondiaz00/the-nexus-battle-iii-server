@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebSocket Client</title>
+    <title>Socket.IO Client</title>
+    <!-- Importa Socket.IO desde un CDN -->
+    <script type="module" src="../controller/game.services2.js">
+    </script>
 </head>
 <body>
-    <h1>WebSocket Client</h1>
-    <input type="text" id="username" placeholder="Enter your username" />
-    <input type="text" id="messageInput" placeholder="Type a message" />
-    <button id="sendMessageButton">Send Message</button>
-    <div id="messages"></div>
-
-    <script src="../../dist/websocket-client/client.js"></script>
+    <h1>Socket.IO Client</h1>
 </body>
 </html>

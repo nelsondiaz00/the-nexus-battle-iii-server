@@ -13,6 +13,7 @@ export class Hero implements IHero {
     public subtype: subHeroType;
     public attributes: { [key: string]: IAttribute };
     public products: IProduct[];
+    public alive: boolean;
 
     constructor(
         idUser: string,
@@ -30,6 +31,7 @@ export class Hero implements IHero {
             attributesArray.map((attr) => attr.clone()),
         );
         this.products = products;
+        this.alive = true;
     }
 
     private createAttributesMap(attributes: IAttribute[]): {

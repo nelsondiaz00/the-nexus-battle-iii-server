@@ -14,7 +14,7 @@
     "include": [
     "src/**/*.ts",
     "client/**/*.ts"
-, "src/websocket-server/server-socket.js"    ],
+, "src/websocket-server/server-socket.js", "client/controller/render.services.js"    ],
     "exclude": ["node_modules"]
   }
   

@@ -9,4 +9,5 @@ export interface IHero {
     subtype: subHeroType;
     attributes: { [key: string]: IAttribute };
     products: Product[];
+    alive: boolean;
 }

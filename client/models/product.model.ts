@@ -9,6 +9,7 @@ import { IHero } from "../ts/interfaces/hero.interfaces";
 import { IAttribute } from "../ts/interfaces/attribute.interfaces";
 
 export class Product implements IProduct {
+    public idProduct: string;
     public productName: string;
     public productDescription: string;
     public productType: productType;
@@ -20,6 +21,7 @@ export class Product implements IProduct {
     public imagePath: string;
 
     constructor(
+        idProduct: string,
         productName: string,
         productDescription: string,
         productType: productType,
@@ -30,6 +32,7 @@ export class Product implements IProduct {
         conditions: ICondition[],
         imagePath: string,
     ) {
+        this.idProduct = idProduct;
         this.productType = productType;
         this.heroType = heroType;
         this.subHeroType = subHeroType;

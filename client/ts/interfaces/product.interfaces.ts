@@ -6,6 +6,7 @@ import { IEffect } from "./effect.interfaces";
 import { IHero } from "./hero.interfaces";
 
 export interface IProduct {
+    idProduct: string;
     productName: string;
     productDescription: string;
     productType: productType;
